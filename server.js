@@ -15,7 +15,7 @@ app.use(express.json());
 
 //root route
 app.get("/", (req, res) => {
-  res.send("Contact Management Backend is running 🚀");
+  res.send("Contact Management Backend is running!");
 });
 
 //Routes
