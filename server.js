@@ -12,6 +12,12 @@ const app = express();
 app.use(cors()); //allow request
 app.use(express.json());
 
+
+//root route
+app.get("/", (req, res) => {
+  res.send("Contact Management Backend is running 🚀");
+});
+
 //Routes
 app.use("/api/contacts", contactRoutes);
 
